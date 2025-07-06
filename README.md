@@ -4,7 +4,7 @@
 
 designed for ethical research, intelligence gathering, or cybersecurity auditing within the Tor network. Tailored specifically for hidden services, this script performs automated metadata collection, fingerprinting of technologies, content hashing, and structural breakdown of onion-based websites — all via a secure SOCKS5 proxy over Tor.
 
-At its core, this tool leverages the Tor daemon’s SOCKS5 proxy (default: 127.0.0.1:9150) to tunnel HTTP requests directly into the dark web. Using the robust requests library with Tor proxy configuration, it connects to the specified .onion URL and conducts a structured assessment of the service’s public-facing HTML content.
+At its core, this tool leverages the Tor daemon’s SOCKS5 proxy (default: 127.0.0.1:9050) to tunnel HTTP requests directly into the dark web. Using the robust requests library with Tor proxy configuration, it connects to the specified .onion URL and conducts a structured assessment of the service’s public-facing HTML content.
 
 Upon connection, it reports the HTTP status code and measures the response latency, providing insights into service uptime or potential filtering. It captures all HTTP headers, highlighting key indicators such as server type, content type, response size, and any "X-Powered-By" values that might leak underlying tech stacks. The complete page source is saved locally as onion_site.html, enabling offline analysis or archival.
 
